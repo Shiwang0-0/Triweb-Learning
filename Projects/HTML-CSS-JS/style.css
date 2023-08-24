@@ -1,0 +1,72 @@
+.maindiv
+{
+    background-color: black;
+    width: 404px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    
+}
+
+.userdiv
+{
+    width: 400px;
+    height: 80px;
+    
+}
+
+.red
+{
+    width: 200px;
+    display: inline-block;
+    background-color: red;
+}
+.pink
+{
+    width: 200px;
+    display: inline-block;
+    background-color: pink;
+    margin-bottom: 40px;
+}
+.blue
+{
+    width: 200px;
+    display: inline-block;
+    background-color: blue;
+}
+.grey
+{
+    width: 200px;
+    display: inline-block;
+    background-color: grey;
+    margin-bottom: 40px;
+}
+
+button
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    /* align-items: center; */
+    height:50px;
+    width: 80px;
+    margin-left: 30px;
+    background-color: rgb(196, 128, 25);
+}
+
+.input_text{
+    margin-left: 120px;
+    display: block;
+}
+
+
+#pro_user
+{
+    position: absolute;
+    font-size: 2rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
