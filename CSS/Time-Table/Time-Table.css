@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    border: border-box;
+}
+
+
+
+body h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#Time-Table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+table{
+    border: 5px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 610px;
+    width: 70%;
+}
+
+#table_content{
+    font-size: 1.3rem;
+    text-align: center;
+    width: 85%;
+    color: rgb(255, 255, 255);
+}
+
+
+.bold_text
+{
+    font-weight: bold;
+}
+
+
+
+table th{
+    padding: 30px;
+}
+
+table td{
+    padding: 10px;
+}
+
+.color-zero
+{
+    background: rgb(2, 53, 65);
+}
+.color-one
+{
+    background: rgb(25, 70, 128);
+}
+.color-two
+{
+    background: rgb(2, 71, 160);
+}
+.color-three
+{
+    background: rgb(43, 41, 142);
+}
+.color-four
+{
+    background: rgb(50, 59, 159);
+}
+.color-five
+{
+    background: rgb(21, 31, 163);
+}
+.color-six
+{
+    background: rgb(37, 65, 156);
+}
+.color-seven
+{
+    background: rgb(30, 67, 171);
+}
