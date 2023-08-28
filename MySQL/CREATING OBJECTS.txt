@@ -1,0 +1,26 @@
+CREATING OBJECTS
+
+------------------------------------------------------------------------------------------
+SELECT st.*
+from teacher st   //st is an object
+where id=2;
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+SELECT st.name
+from teacher st   //st is an object
+where id=2
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+select *
+from teacher st //st is an object of teacher.
+inner join classes c1 on st.name = c1.studentname //c is also an obj of classes
+where id=5;
+------------------------------------------------------------------------------------------
+
+
+in above example when combining two tables (change is not affected),some id or data will be mached twice , therefore we create class objects and access that objects id only.
