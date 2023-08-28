@@ -1,0 +1,46 @@
+DATABASE_WORKSHOP_OPERATIONS -05
+
+------------------------------------------------------------------------------------------
+GROUP BY
+select class_id ,count(*) as no_of_students from students 
+group by class_id
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+select class_id ,count(*) as no_of_students from students 
+group by class_id
+order by no_of_students
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+HAVING CLAUSE - WHERE clause cannot be used with aggregate functions, so HAVING clause was introduce
+select class_id ,count(*) as no_of_students from students 
+group by class_id
+having no_of_students > 2
+//here functions like count,avg,min,max are aggregate functions
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------
+CREATE TABLE teacher_dup (
+    id int,
+    teacher_name varchar(25) not null,
+    mobile varchar(20) not null,
+    salary int 
+)
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+INSERT RECORD FROM TEACHER TO TEACHER_DUP TABLE
+insert into teacher_dup(id,teacher_name,mobie,salary) 
+select id,teacher_name,mobile,salary from teachers
+where id=3
+select * from teacher_dup
+------------------------------------------------------------------------------------------
