@@ -1,0 +1,62 @@
+DATABASE_WORKSHOP_JOINS -04
+
+
+------------------------------------------------------------------------------------------
+JOINS
+LEFT - left portion + intersection of left and right is added.
+RIGHT - right portion + intersection of left and right is added.
+INNER - intersection of both left and right.
+CROSS - both left and right will come.
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+select * 
+from classes c1
+left join teacher tr on c1.teacher_id = tr.id
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+select * 
+from classes c1
+right join teacher tr on c1.teacher_id = tr.id
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+select * 
+from classes c1
+inner join teacher tr on c1.teacher_id = tr.id
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+select * 
+from classes c1
+cross join teacher tr on c1.teacher_id = tr.id
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------
+UNION - To use two select statement at a time.
+
+EVERY SELECT statement within UNION must have the same number of columns.
+The columns must also have similar data types.
+The columns in every SELECT statement must also be in same order.
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+UNION AL- UNION Selects only distinct values by default, to allow duplicate values use UNION ALL
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+select teacher_name from teacher
+union
+select student_name from students
+------------------------------------------------------------------------------------------
