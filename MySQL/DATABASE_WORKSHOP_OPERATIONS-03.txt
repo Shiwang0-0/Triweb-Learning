@@ -1,0 +1,74 @@
+DATABASE_WORKSHOP_OPERATIONS -03
+
+
+ORDER BY
+------------------------------------------------------------------------------------------
+order by class_id 
+//by default asc
+
+select * from students where class_id <> 4
+order by class_id acs
+
+select * from students where class_id <> 4
+order by class_id desc
+------------------------------------------------------------------------------------------
+
+
+
+
+LIMIT
+------------------------------------------------------------------------------------------
+select * from students where class_id = 1 limit 2
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------
+MAX/MIN/AVG/SUM
+select * from teacher
+select max(salary) from teacher
+select count(id)as number_of_teachers from teacher
+select avg(salary) as average_salary from teacher
+select sum(salary) as total_salary from teacher
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------
+LIKE OPERATOR
+select * from students where student_name like '_bc'  
+_ will help in case of only one character.
+
+select * from students where student_name like 'a%'
+% will help in case of all the posible result starting with a.
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------
+IN OPERATION
+select * from students where id in (5,13,11)
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------
+SECOND MAXIMUM VALUE
+select max(salary) from teacher where salary not in (900) 
+or if max salary not known
+select max(salary) from teacher where salary not in (select max(salary) from teacher)
+//maximum second salary
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------
+BETWEEN OPEARION
+select * from teacher where salary between 100 and 460 
+// both included
+------------------------------------------------------------------------------------------
