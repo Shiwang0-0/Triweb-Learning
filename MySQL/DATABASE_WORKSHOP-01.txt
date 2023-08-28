@@ -1,0 +1,102 @@
+DATABASE_WORKSHOP -01
+
+------------------------------------------------------------------------------------------
+create database workshop
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+CREATE TABLE teacher (
+    id int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    teacher_name varchar(25) not null,
+    mobile varchar(20) not null,
+    salary int(20) 
+)
+	//0 row(s) affected, 2 warning(s):
+	//1681 Integer display width is deprecated and will be removed in a future release.
+ 	//1681 Integer display width is deprecated and will be removed in a future release.
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------	
+drop table teacher;
+------------------------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------------------------
+CREATE TABLE teacher (
+    id int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    teacher_name varchar(25) not null,
+    mobile varchar(20) not null,
+    salary int(20) 
+)
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+CREATE TABLE classes
+(
+id int not null AUTO_INCREMENT  ,
+class_name varchar(25) not null,
+teacher_id int NOT null ,
+PRIMARY KEY(id),
+FOREIGN KEY (teacher_id) REFERENCES teacher(id)
+)
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+CREATE TABLE students
+(
+id int not null AUTO_INCREMENT  ,
+student_name varchar(25) not null,
+mobile varchar(20) default 0,
+class_id int NOT null ,
+PRIMARY KEY(id),
+FOREIGN KEY (class_id) REFERENCES classes(id)
+)
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+INSERT INTO teacher(teacher_name,mobile,salary) VALUES('abcde','12345','400'),('artye','128645','430'),('abcuk','123098','460');
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+select * from teacher
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+insert into teacher values(4,"kjhm","421","900") //id is passed and not the column.
+
+//IT IS NOT POSSIBLE TO TEST FOR NULL VALUES WITH COMPARISION OPERATORS ,SUCH AS = ,< or <>. we have to use IS NULL and IS NOT NULL operators instead.
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+insert into classes(class_name,teacher_id) values("class 6",10)
+Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`workshop`.`classes`, CONSTRAINT `classes_ibfk_1` FOREIGN KEY (`teacher_id`) REFERENCES `teacher` (`id`))
+//beacause there is no 10th id in teachers table.
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+insert into classes(class_name,teacher_id) values("class 6",1),("class 7",2),("class 8",3),("class 9",4)
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+select * from classes
+------------------------------------------------------------------------------------------
+
+
