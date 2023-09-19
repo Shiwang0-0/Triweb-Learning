@@ -1,0 +1,31 @@
+{
+  "name": "quizapp",
+  "version": "1.0.0",
+  "description": "this is rest api for quiz manager app",
+  "main": "app.js",
+  "repository": "https://github.com/Shiwang0-0/Triweb-Learning.git",
+  "author": "shiwang",
+  "license": "MIT",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.4",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.3",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.2",
+    "typescipt": "^1.0.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "yarn tsc --noEmitOnError",
+    "start": "node ./dist/app.js",
+    "start:ts": "yarn ts-node ./src/app.ts",
+    "start:dev": "nodemon"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  }
+}
