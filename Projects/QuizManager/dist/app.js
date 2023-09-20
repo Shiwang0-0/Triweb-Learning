@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const user_1 = __importDefault(require("./routes/user"));
 const app = (0, express_1.default)(); //intialize application
-const connectionString = "mongodb+srv://bisht0shiwang:kjabc12345@cluster0.2hayggo.mongodb.net/workshopDb?retryWrites=true&w=majority"; //change the password and username to your account
+const connectionString = "mongodb+srv://Userid:Username@cluster0.2hayggo.mongodb.net/collectionName?retryWrites=true&w=majority"; //change the password and username to your account
 app.use(express_1.default.json()); //parsing json data sent in the request
 app.get('/', (req, res) => {
     res.send("hello connnected");
