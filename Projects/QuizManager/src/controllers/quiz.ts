@@ -62,7 +62,7 @@ const getQuiz: RequestHandler = async (req, res, next) => {
         }
         else {
             
-            quiz = await Quiz.find({ createdBy: req.userId });
+            quiz = await Quiz.find({ createdBy: req.userId }); //how many quizes a user has created,get all of them.
             // if(quiz.length===0){
             //     const err = new projectError("You are not authorized ,quiz length is null");
             //     err.statusCode = 403;
