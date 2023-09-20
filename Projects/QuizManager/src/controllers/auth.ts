@@ -50,7 +50,7 @@ import {returnResponse} from '../utils/interfaces'
 }
 
 
-    let token;
+
 // const loginUser =async (req:Request,res:Response,next:NextFunction) =>{
     const loginUser:RequestHandler =async (req,res,next) =>{
     let resp:returnResponse;
@@ -63,7 +63,7 @@ import {returnResponse} from '../utils/interfaces'
         //find user with email
         const user =await User.findOne({email});
         // console.log(user);
-       
+
 
         //verify password
         if(!user)
@@ -74,9 +74,10 @@ import {returnResponse} from '../utils/interfaces'
         }
         else{
             const status =await bcrypt.compare(password,user.password);
+
             if(status)
             {
-                 token = jwt.sign({userId:user._id},"secretkeytodecrypt",{expiresIn:'1h'}) //creates a token while login process and this token will be needed to perform operations.
+                const token = jwt.sign({userId:user._id},"secretkeytodecrypt",{expiresIn:'1h'}) //creates a token while login process and this token will be needed to perform operations.
                 resp={status:"success",message:"successfully logged in",data:{token}}
                 res.status(200).send(resp);
             }
@@ -114,4 +115,4 @@ const isUserExist=async (email:String)=>{ //to check if user already exist,and a
         return true;
 }
 
-export {registerUser,loginUser,isUserExist,token}
+export {registerUser,loginUser,isUserExist}
