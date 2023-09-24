@@ -1,7 +1,7 @@
 # TriWeb Learning
 ## 3 Months intership program
 
-![N|Solid](https://pps.whatsapp.net/v/t61.24694-24/362698039_632435395531752_8987297261141533500_n.jpg?ccb=11-4&oh=01_AdTaM4vdufkBqCH26rDvqRx4mzZl5CtjK5ul6sNiKwS5jg&oe=651D16F2&_nc_sid=000000&_nc_cat=108)
+![N|Solid](https://media.licdn.com/dms/image/D4D0BAQE-QU-kVmSjIg/company-logo_200_200/0/1692978916943?e=1703721600&v=beta&t=f7h-s3leD7HgCBr4NCP9RdoNZ5_ICtUby3UlgzlZubE)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shiwang-bisht-b5918b269/)  [![Twitter](https://img.shields.io/badge/Twitter-blue?style=social&logo=twitter)](https://twitter.com/Shiwang0bisht)
 
