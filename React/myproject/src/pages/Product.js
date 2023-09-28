@@ -1,34 +1,33 @@
 //product---->productlList----->productItem
 
 import ProductList from "../components/product/ProductList";
-function Product()
-{   
-    let products=[
-        {
-            id:"p1",
-            productName:"Tour",
-            description:"good tour",
-            price:"30000",
-            image:"https://media.istockphoto.com/id/1498610798/photo/beautiful-landscape-baan-jabo-mae-hong-son-thailand.jpg?s=2048x2048&w=is&k=20&c=pXXSPFUI5xQTuBFCfwOSbCQvwtqWAZOpFRQWeQkYwSI="
-        },
-        {
-            id:"p2",
-            productName:"Ride",
-            description:"bad ride",
-            price:"10000",
-            image:"https://media.istockphoto.com/id/1206473179/photo/mount-abu-hill-station-india.jpg?s=2048x2048&w=is&k=20&c=kD4LbbkMsZkXzdhQDsKfPEQKRyra9aRTD3yO1NljPBo="
-        }
-    ];
-    return <div>
-        
-            {/* {products} cannot be parsed normally because of key value pairs */}
+import { useState } from "react";
+import { useEffect } from "react";
 
-            {/* {products.map((item)=>{
-                // return item.productName;
-                return <li key={item.id}>{item.productName}</li>;
-            })} */}
-            <ProductList products={products}/> 
-            {/* sending products as props in the productList component */}
+function Product()  //we cannot make a component async and then wait for the product list to get all the data.we have to set states for data fetching
+{
+    let [products, setProducts] = useState([]);
+    let [isDataFetched, setIsDataFetching] = useState(true); //by default true,considering when we first time enter the page the data is fetching.
+    useEffect(() => {
+        setIsDataFetching(true);
+        fetch("http://localhost:3004/product", { // by default fetch method send GET request
+        }).then(response => response.json())
+            .then(responseData => {
+                setIsDataFetching(false); //now the value will be changed,its value will be rerendered.means when state changes product() is called again and this will lead us to an infite loop of sending response to the page and fetching request to the server which can ultimately lead us to trouble/get blocked by the server
+                setProducts(responseData.data);
+            })   //then chaining .
+            .catch(err => console.log(err));
+    }, []); //this empty list [] can hold multiple dependies,this [] empty list allow to check the condition of the previous time which was true the first time but is false afterwards because in fetch method we have set it false,so it will be false in the second run
+    if (isDataFetched) {
+        return <div>
+            Data is loading.
+        </div>
+    }
+    return <div>
+
+        with data
+        <ProductList products={products} />
+        {/* sending products as props in the productList component */}
     </div>
 }
 
