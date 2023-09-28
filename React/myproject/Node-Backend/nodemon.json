@@ -1,0 +1,5 @@
+{
+    "env":{
+        "connectionString":"mongodb+srv://<userid here>:<password here>@cluster0.2hayggo.mongodb.net/?retryWrites=true&w=majority"
+    }
+}
