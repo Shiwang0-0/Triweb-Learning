@@ -6,7 +6,7 @@ function ProductList(props)
         <h2>Products List:</h2>
         {props.products.map((item)=>{
                 // return item.productName;
-               return <ProductItem key={item.id} id={item.id} item={item}/>
+               return <ProductItem key={item._id} id={item._id} item={item}/>
             })}
     </ul>
 }
