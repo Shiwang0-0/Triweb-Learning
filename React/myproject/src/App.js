@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Product from './pages/Product';
 import Contact from "./pages/Contact";
 import Layout from './components/Layouts/Layout';
+import AddProduct from './pages/AddProduct';
 function App() {
   return (
    <Layout>
@@ -12,6 +13,7 @@ function App() {
       <Route path='/about' element={<About />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='/Product' element={<Product />}></Route>
+      <Route path='/Product/add' element={<AddProduct />}></Route>
       </Routes>
     </Layout>
   );
