@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+.square {
+    border: 2px solid black;
+    height: 86px;
+    width: 86px;
+    font-size: 50px;
+    text-align: center;
+    margin: 0px;
+    padding: 18px;
+    /* border: 1px solid #000000;
+    font-size: 24px;
+
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px; */
+}
+
+
+.boardRow{
+    display: grid;
+    grid-template-columns: repeat(3,85px);
+    grid-template-rows: repeat(3,29px);
+    margin:-2px;
+    padding: 0px;
+
+}
+
+.centerBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.completeBoard{
+    margin: 100px;
+}
+
+.status{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 2.5rem;
+}
