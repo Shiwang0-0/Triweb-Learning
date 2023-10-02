@@ -30,20 +30,25 @@ export default function Board(){
         setSquares(nextSq);
         setXIsNext(!isNextX);
     }
-
+    const val =squares?.every(ele => ele!==null)
     const winner=calculateWinner(squares);
     let status;
     if(winner)
     {
         status="Winner is : "+winner;
     }
-    else if(!winner)
-    {
-        status="Next chance : "+(isNextX?'X':'O');
-    }
+   
     else
-    {   
-        status="Draw";
+    {  
+        if(!val)
+        {
+                status="Next chance : "+(isNextX?'X':'O');
+        } 
+        else
+        {
+            status="Draw";
+        }
+        
     }
 
     return (    
