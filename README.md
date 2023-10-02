@@ -42,7 +42,7 @@
     
 [NodeJS](https://github.com/Shiwang0-0/Triweb-Learning/blob/main/NodeJS/README.md): Connect with BackEnd and implementing different concepts of NodeJS.
 
-[PROJECTS](https://github.com/Shiwang0-0/Triweb-Learning/blob/main/Projects/README.mdhttps://github.com/Shiwang0-0/Triweb-Learning/blob/main/Projects/README.md): Implementing Various projects based on my learnings 
+[PROJECTS](https://github.com/Shiwang0-0/Triweb-Learning/blob/main/Projects/README.md): Implementing Various projects based on my learnings 
                   
 
    
