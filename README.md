@@ -2,7 +2,7 @@
 ## 3 Months intership program
 
 <p align="center">
-  <img  src="https://drive.google.com/uc?export=view&id=1w7ic9uX1CBv-g9isMxWdkeFS76poDlKb">
+  <img  width="460" height="300" src="https://drive.google.com/uc?export=view&id=1w7ic9uX1CBv-g9isMxWdkeFS76poDlKb">
 </p>
 
 
