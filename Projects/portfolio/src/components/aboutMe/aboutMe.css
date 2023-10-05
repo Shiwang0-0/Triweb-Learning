@@ -1,0 +1,28 @@
+
+.aboutMe{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3.3rem;
+    color: red;
+}
+
+
+
+.aboutMepara{
+    position: absolute; 
+    top: 120vh; 
+    left: 50vw;
+    transform: translate(-50%, -50%); 
+    font-size: 24px; 
+    color: rgb(0, 0, 0); 
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.myImage{
+    position: absolute; 
+    height: 12rem;
+    width: 12rem;
+    top: 72vh; 
+    left: 45vw;
+    border-radius: 200%;
+}
