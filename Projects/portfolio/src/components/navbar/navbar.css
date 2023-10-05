@@ -1,0 +1,41 @@
+.navbar
+{
+    height: 5rem;
+    width: 100vw;
+    max-width: 95rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.logo
+{
+    object-fit: cover;
+    height: 4rem;
+    width: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.socialHandlesLink
+{
+    margin: 0.7rem;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    
+}
+
+
+
+.skillsHeading{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: red;
+}
