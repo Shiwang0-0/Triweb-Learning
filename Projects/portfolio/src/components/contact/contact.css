@@ -1,0 +1,54 @@
+.contactText{
+    margin-top: 5rem;
+    height: 3rem;
+    text-align: center;
+     font-size: 3rem;
+     color: #FFEA00;
+}
+
+.contactSection{
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100%;
+}
+.contactMe{
+    align-items: center;
+    height: 30rem;
+    width:60rem;
+    background-color: #424136;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    color: white;
+}
+
+.name, .email, .textArea{
+    margin: 1.3rem;
+    /* height: 3rem */
+    padding: 1rem;
+    color: white;
+    width: 25rem;
+}
+
+.name::placeholder, .email::placeholder, .textArea::placeholder{
+   font-size: 1.3rem;
+}
+
+.submitButton{
+    width: 15rem;
+    margin: auto;
+}
+
+input, textarea{
+    font-size: 1.1rem;
+}
