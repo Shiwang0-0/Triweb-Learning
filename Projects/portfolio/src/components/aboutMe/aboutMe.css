@@ -1,10 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Special+Elite&display=swap');
 
 .aboutMe{
     margin-top: 3rem;
     text-align: center;
     font-size: 3.3rem;
     color: #FFEA00;
+    font-family: 'Courier Prime', monospace;
 }
 
 
