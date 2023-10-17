@@ -8,9 +8,13 @@ import X from '../../assets/pngwing.com (6).png'
 
 
 const Navbar=()=>{
+    const handleReloadClick=()=>{
+        window.location.reload();
+        window.scrollTo(0, 0);
+    }
     return (
     <nav className="navbar">
-        <img src={logo} alt="Logo" className="logo"/>
+        <img src={logo} onClick={handleReloadClick} alt="Logo" className="logo"/>
         <div className="socialHandles">
         {/* <Link  className="socialHandlesLink">Linkedin</Link>
         <Link className="socialHandlesLink">Twitter</Link>
