@@ -2,12 +2,14 @@ import './resume.css'
 export const Resume=()=>{
     const handleDownloadClick = () => {
         const content = "This is the content of the file.";
-        const temp = new temp([content], { type: 'text/plain' });
-        const url = window.URL.createObjectURL(temp);
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'resume-shiwang.txt'; 
+        a.download = 'downloaded-file.txt'; 
         a.click();
+    
+       
         window.URL.revokeObjectURL(url);
       };
       
