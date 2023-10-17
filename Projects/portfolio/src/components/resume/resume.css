@@ -1,0 +1,27 @@
+.download{
+    cursor: pointer;
+    background-color: #FFEA00;
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+
+}
+
+.download:hover {
+    background-color: #eaca58;
+    color: rgb(255, 255, 255); 
+}
+
+
+.resume{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+    text-align: center;
+    color: #FFEA00;
+   
+}
+
+
