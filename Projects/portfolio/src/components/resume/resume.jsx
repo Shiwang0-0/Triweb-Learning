@@ -1,17 +1,20 @@
 import './resume.css'
 export const Resume=()=>{
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/11VlKFQjpKU5-dW-0xxiuQZt1_UoXlYy-/view?usp=sharing' ; 
-        link.download = 'shiwang-resume.pdf'; 
-        link.target = '_blank';
-        link.click();
+    const handleDownloadClick = () => {
+        const content = "This is the content of the file.";
+        const temp = new temp([content], { type: 'text/plain' });
+        const url = window.URL.createObjectURL(temp);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'resume-shiwang.txt'; 
+        a.click();
+        window.URL.revokeObjectURL(url);
       };
       
       
     return (
         <div className='resume'>
-             <button onClick={handleDownload}  className='download'>Download Resume</button>
+             <button onClick={handleDownloadClick}  className='download'>Download Resume</button>
         </div>
     )
 }
