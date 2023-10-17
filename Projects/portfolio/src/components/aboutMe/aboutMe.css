@@ -1,4 +1,5 @@
 
+
 .aboutMe{
     margin-top: 3rem;
     text-align: center;
@@ -10,7 +11,7 @@
 
 .aboutMepara{
     position: absolute; 
-    top: 120vh; 
+    top: 100vh; 
     left: 50vw;
     transform: translate(-50%, -50%); 
     font-size: 24px; 
@@ -22,7 +23,8 @@
     position: absolute; 
     height: 12rem;
     width: 12rem;
-    top: 72vh; 
+    top: 53vh; 
     left: 45vw;
     border-radius: 200%;
 }
+
