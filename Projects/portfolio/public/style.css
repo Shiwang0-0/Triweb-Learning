@@ -11,4 +11,5 @@ body{
     color: white;
     overflow: hidden;
     overflow-y: scroll;
+    background: linear-gradient( #1b1a1a,rgb(40, 40, 32), #2d2e20,#242121, rgb(33, 33, 22));
 }
