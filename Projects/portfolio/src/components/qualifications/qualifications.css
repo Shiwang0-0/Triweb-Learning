@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Special+Elite&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Special+Elite&family=Young+Serif&display=swap');
 .qualificationText{
     height: 3rem;
     text-align: center;
      font-size: 3rem;
      color: #FFEA00;
      margin-top: 5rem;
+     font-family: 'Young Serif', serif;
 }
 
 .qualificationSection{
@@ -12,13 +15,17 @@
     margin-top: 4rem;
     width: 100%;
     height: 60rem;
+    
    
 }
 
 .Quali{
-    height: 15rem;
+    height: 16rem;
     width:60rem;
+    margin: 1.7rem;
     background-color: #424136;
+    border: 5px solid rgb(80, 76, 76);
+    box-shadow: 0 0 10px 10px rgba(207, 222, 40, 0.5);
 }
 
 .courseHeading{
@@ -26,26 +33,28 @@
     margin-top: 2rem;
     font-size: 2rem;
     color: rgb(227, 227, 116);
+    font-family: 'Poppins', sans-serif;
 }
 
 
 .college{
+    margin-top: -1.4rem;
     display: flex;
     text-align: center;
 }
 
 
 .collegeLogo{
-    height: 6rem;
-    width: 6rem;
+    height: 8rem;
+    width: 8rem;
     border-radius: 100%;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: 2rem;
 }
 
 .collegeData{
-    text-align: center;
-    margin-top: 4.8rem;
+    text-align: left;
+    margin-top: 3rem;
     margin-left: 1.5rem;
     font-size: 1.6rem;
     width: 45rem;

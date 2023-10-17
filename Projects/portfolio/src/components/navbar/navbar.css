@@ -21,7 +21,9 @@
     margin-top: 1rem;
     margin-left: 1rem;
     border-radius: 100%;
-}
+    border: 2px solid rgb(33, 31, 31);
+    cursor: pointer;
+    }
 
 .socialHandlesLink
 {

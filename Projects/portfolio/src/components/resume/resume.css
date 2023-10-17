@@ -4,12 +4,13 @@
     height: 5rem;
     width: 15rem;
     font-size: 1.5rem;
-
+    color: rgb(54, 40, 40); 
+    box-shadow: 6px 6px 3px 3px rgba(91, 90, 72, 0.5);
 }
 
 .download:hover {
-    background-color: #eaca58;
-    color: rgb(255, 255, 255); 
+    background-color: #efc610;
+    color: rgb(0, 0, 0); 
 }
 
 

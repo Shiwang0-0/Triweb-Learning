@@ -22,7 +22,7 @@ export const Projects = () => {
           <div className="projectContainer">
             <div className="project1">
                 <img src={amazon} alt="amazon" className="projectImg" />
-              <div className="projectText">
+              <div className="projectContainerText">
                 Amazon Clone
                 <div class="options">
                 <button className="opt1" onClick={redirectToAmazon}>Live</button>
@@ -35,7 +35,7 @@ export const Projects = () => {
           <div className="projectContainer">
             <div className="project2">
             <img src={onlineMeals} alt="amazon" className="projectImg" />
-              <div className="projectText">Food Ordering Site
+              <div className="projectContainerText">Food Ordering Site
               <div class="options">
               <button className="opt1" onClick={redirectToAmazon}>Live</button>
               <button className="opt1" onClick={redirectToAmazon}>Code</button>
@@ -46,7 +46,7 @@ export const Projects = () => {
           <div className="projectContainer">
             <div className="project3">
             <img src={tictactoe} alt="amazon" className="projectImg" />
-              <div className="projectText">TicTactoe
+              <div className="projectContainerText">TicTactoe
               <div class="options">
               <button className="opt1" onClick={redirectToticTacToe}>Live</button>
               <button className="opt1" onClick={redirectToticTacToeGit}>Code</button>
@@ -57,7 +57,7 @@ export const Projects = () => {
           <div className="projectContainer">
             <div className="project4">
             <img src={gymimg} alt="amazon" className="projectImg" />
-              <div className="projectText">Gym
+              <div className="projectContainerText">Gym
               <div class="options">
               <button className="opt1" onClick={redirectToAmazon}>Live</button>
               <button className="opt1" onClick={redirectToAmazon}>Code</button>

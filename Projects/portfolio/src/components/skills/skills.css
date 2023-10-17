@@ -1,9 +1,12 @@
+ @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Special+Elite&family=Young+Serif&display=swap');
+
 .skillsText{
     margin-top: -13rem;
     height: 3rem;
     /* background-color: pink; */
     text-align: center;
      font-size: 3rem;
+     font-family: 'Young Serif', serif;
      color: #FFEA00;
 }
 
@@ -24,15 +27,25 @@
     align-items: center;
     flex-wrap: wrap;
     /* flex-basis: calc(33.33% - 10px); */
-    height: 25rem;
+    height: 27rem;
     width: 63%; 
     background-color: #424136;
+    border: 5px solid rgb(80, 76, 76);
+    box-shadow: 0 0 10px 10px rgba(207, 222, 40, 0.5);;
 }
+
+/* .skillsSectionBox:hover{
+    background-color: #58574a;
+} */
 
 .skill{
     border-radius: 100%;
-    height: 6rem;
-    width: 6rem;
+    height: 8rem;
+    width: 8rem;
     margin-top: 0rem;
     margin: 3rem;
+}
+
+.skill:hover{
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.5);;
 }
