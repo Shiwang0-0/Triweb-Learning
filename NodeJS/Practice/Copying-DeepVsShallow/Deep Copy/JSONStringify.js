@@ -13,7 +13,7 @@ const obj = {
 
 const newObj = JSON.parse(JSON.stringify(obj));
 
-console.log("Before:", obj, newObj);
+console.log("Before:", obj, newObj); 
 
 obj.a.p = 5; 
 
